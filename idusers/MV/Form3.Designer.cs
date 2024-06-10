@@ -56,10 +56,10 @@ namespace idusers
             this.SeguroSocial = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Liquido = new System.Windows.Forms.GroupBox();
+            this.Total_final = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.Imprimir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Total_final = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Percepciones.SuspendLayout();
             this.Deducciones.SuspendLayout();
@@ -72,7 +72,7 @@ namespace idusers
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
             this.label1.Location = new System.Drawing.Point(17, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 26);
+            this.label1.Size = new System.Drawing.Size(139, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido";
             // 
@@ -82,7 +82,7 @@ namespace idusers
             this.Most_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
             this.Most_user.Location = new System.Drawing.Point(149, 10);
             this.Most_user.Name = "Most_user";
-            this.Most_user.Size = new System.Drawing.Size(87, 26);
+            this.Most_user.Size = new System.Drawing.Size(100, 29);
             this.Most_user.TabIndex = 1;
             this.Most_user.Text = "Usuario";
             this.Most_user.Visible = false;
@@ -152,6 +152,7 @@ namespace idusers
             // 
             this.Salario_hora.Location = new System.Drawing.Point(27, 96);
             this.Salario_hora.Name = "Salario_hora";
+            this.Salario_hora.ReadOnly = true;
             this.Salario_hora.Size = new System.Drawing.Size(100, 20);
             this.Salario_hora.TabIndex = 8;
             // 
@@ -206,6 +207,7 @@ namespace idusers
             // 
             this.Comisiones.Location = new System.Drawing.Point(73, 142);
             this.Comisiones.Name = "Comisiones";
+            this.Comisiones.ReadOnly = true;
             this.Comisiones.Size = new System.Drawing.Size(100, 20);
             this.Comisiones.TabIndex = 2;
             // 
@@ -213,6 +215,7 @@ namespace idusers
             // 
             this.Horas_extra.Location = new System.Drawing.Point(133, 96);
             this.Horas_extra.Name = "Horas_extra";
+            this.Horas_extra.ReadOnly = true;
             this.Horas_extra.Size = new System.Drawing.Size(100, 20);
             this.Horas_extra.TabIndex = 1;
             // 
@@ -220,6 +223,7 @@ namespace idusers
             // 
             this.Sueldo.Location = new System.Drawing.Point(71, 57);
             this.Sueldo.Name = "Sueldo";
+            this.Sueldo.ReadOnly = true;
             this.Sueldo.Size = new System.Drawing.Size(100, 20);
             this.Sueldo.TabIndex = 0;
             // 
@@ -326,6 +330,26 @@ namespace idusers
             this.Liquido.Text = "Liquido";
             this.Liquido.Visible = false;
             // 
+            // Total_final
+            // 
+            this.Total_final.AutoSize = true;
+            this.Total_final.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
+            this.Total_final.Location = new System.Drawing.Point(280, 40);
+            this.Total_final.Name = "Total_final";
+            this.Total_final.Size = new System.Drawing.Size(69, 29);
+            this.Total_final.TabIndex = 11;
+            this.Total_final.Text = "Total";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
+            this.label6.Location = new System.Drawing.Point(65, 40);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(196, 29);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Sueldo a recibir:";
+            // 
             // Imprimir
             // 
             this.Imprimir.Location = new System.Drawing.Point(243, 455);
@@ -343,27 +367,8 @@ namespace idusers
             this.button1.TabIndex = 12;
             this.button1.Text = "Generar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            this.label6.Location = new System.Drawing.Point(65, 40);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(169, 26);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Sueldo a recibir:";
-            // 
-            // Total_final
-            // 
-            this.Total_final.AutoSize = true;
-            this.Total_final.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            this.Total_final.Location = new System.Drawing.Point(240, 40);
-            this.Total_final.Name = "Total_final";
-            this.Total_final.Size = new System.Drawing.Size(59, 26);
-            this.Total_final.TabIndex = 11;
-            this.Total_final.Text = "Total";
             // 
             // Form3
             // 

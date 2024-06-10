@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace idusers
 {
-    public partial class Salario : Form
+    public partial class Salario
     {
-        private Dictionary<string, object> arg;
+        private static Dictionary<string, object> arg = new Dictionary<string, object>();
 
         public Salario()
         {

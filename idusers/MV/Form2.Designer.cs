@@ -30,9 +30,10 @@ namespace idusers
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.Username = new System.Windows.Forms.TextBox();
-            this.Pass = new System.Windows.Forms.TextBox();
+            this.Usuario = new System.Windows.Forms.TextBox();
+            this.Contra = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Test = new System.Windows.Forms.Button();
             this.Registrar_button = new System.Windows.Forms.Button();
             this.Regresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,24 +45,25 @@ namespace idusers
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Username
+            // Usuario
             // 
-            this.Username.Location = new System.Drawing.Point(304, 56);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(100, 20);
-            this.Username.TabIndex = 0;
+            this.Usuario.Location = new System.Drawing.Point(304, 56);
+            this.Usuario.Name = "Usuario";
+            this.Usuario.Size = new System.Drawing.Size(100, 20);
+            this.Usuario.TabIndex = 0;
             // 
-            // Pass
+            // Contra
             // 
-            this.Pass.Location = new System.Drawing.Point(304, 98);
-            this.Pass.Name = "Pass";
-            this.Pass.PasswordChar = '*';
-            this.Pass.Size = new System.Drawing.Size(100, 20);
-            this.Pass.TabIndex = 1;
-            this.Pass.TextChanged += new System.EventHandler(this.Pass_TextChanged);
+            this.Contra.Location = new System.Drawing.Point(304, 98);
+            this.Contra.Name = "Contra";
+            this.Contra.PasswordChar = '*';
+            this.Contra.Size = new System.Drawing.Size(100, 20);
+            this.Contra.TabIndex = 1;
+            this.Contra.TextChanged += new System.EventHandler(this.Pass_TextChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Test);
             this.groupBox1.Controls.Add(this.Registrar_button);
             this.groupBox1.Controls.Add(this.Regresar);
             this.groupBox1.Controls.Add(this.pictureBox1);
@@ -69,8 +71,8 @@ namespace idusers
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.Cancelar);
             this.groupBox1.Controls.Add(this.Conect);
-            this.groupBox1.Controls.Add(this.Username);
-            this.groupBox1.Controls.Add(this.Pass);
+            this.groupBox1.Controls.Add(this.Usuario);
+            this.groupBox1.Controls.Add(this.Contra);
             this.groupBox1.Location = new System.Drawing.Point(27, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(477, 237);
@@ -78,6 +80,17 @@ namespace idusers
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // Test
+            // 
+            this.Test.Location = new System.Drawing.Point(396, 19);
+            this.Test.Name = "Test";
+            this.Test.Size = new System.Drawing.Size(75, 23);
+            this.Test.TabIndex = 9;
+            this.Test.Text = "Test";
+            this.Test.UseVisualStyleBackColor = true;
+            this.Test.Visible = false;
+            this.Test.Click += new System.EventHandler(this.Test_Click);
             // 
             // Registrar_button
             // 
@@ -168,8 +181,8 @@ namespace idusers
 
         #endregion
 
-        private System.Windows.Forms.TextBox Username;
-        private System.Windows.Forms.TextBox Pass;
+        private System.Windows.Forms.TextBox Usuario;
+        private System.Windows.Forms.TextBox Contra;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -178,5 +191,6 @@ namespace idusers
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Regresar;
         private System.Windows.Forms.Button Registrar_button;
+        private System.Windows.Forms.Button Test;
     }
 }
